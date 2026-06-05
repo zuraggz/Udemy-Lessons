@@ -1,14 +1,18 @@
-ამ ვერსიაში გავაკეთე Custom Middleware.
+ამ ვერსიაში გავაკეთე Custom Middleware -ს შელამაზებული ვერსია
 
-Steps:
-შექმენი საქაღალდე
-შექმენი კლასი
-დააიმპლემენტირე IMiddleware
-program.cs ში დაამატე:
-builder.Services.AddTransient<CustomMiddleware>();
-შექმენი middlaware instance და გამოიძახე:
-builder.Services.AddTransient<CustomMiddleware>();
+იმის ნაცვლად რომ program.cs ში გვქონოდა:
+app.UseMiddleware<CustomMiddleware>();
 
+გვაქვს:
+app.UseMiddleware<CustomMiddleware>();
 
-Use გადაცემა შეგვიძლია შემდეგზე
-Run terminates the process
+როგორ მივაღწიეთ ამ შედეგს steps:
+public static class CustomMiddlewareJunior  
+    { 
+        public static IApplicationBuilder UseCustomMiddleware(this IApplicationBuilder app)
+        {
+            return app.UseMiddleware<CustomMiddleware>();
+        }
+    }
+
+    დავაიმპლემენტირე ეს სტატიკური კლასი სტატიკური მეთოდით რათა გამედიდებინა app-ი.
