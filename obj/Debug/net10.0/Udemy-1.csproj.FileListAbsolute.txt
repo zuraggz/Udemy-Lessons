@@ -27,3 +27,4 @@ C:\Users\User\source\repos\Udemy-1\Udemy-1\obj\Debug\net10.0\refint\Udemy-1.dll
 C:\Users\User\source\repos\Udemy-1\Udemy-1\obj\Debug\net10.0\Udemy-1.pdb
 C:\Users\User\source\repos\Udemy-1\Udemy-1\obj\Debug\net10.0\Udemy-1.genruntimeconfig.cache
 C:\Users\User\source\repos\Udemy-1\Udemy-1\obj\Debug\net10.0\ref\Udemy-1.dll
+C:\Users\User\source\repos\Udemy-1\Udemy-1\obj\Debug\net10.0\Udemy-1.sourcelink.json
