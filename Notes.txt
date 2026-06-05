@@ -1,0 +1,14 @@
+ამ ვერსიაში გავაკეთე Custom Middleware.
+
+Steps:
+შექმენი საქაღალდე
+შექმენი კლასი
+დააიმპლემენტირე IMiddleware
+program.cs ში დაამატე:
+builder.Services.AddTransient<CustomMiddleware>();
+შექმენი middlaware instance და გამოიძახე:
+builder.Services.AddTransient<CustomMiddleware>();
+
+
+Use გადაცემა შეგვიძლია შემდეგზე
+Run terminates the process
