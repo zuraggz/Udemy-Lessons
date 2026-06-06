@@ -1,18 +1,1 @@
-ამ ვერსიაში გავაკეთე Custom Middleware -ს შელამაზებული ვერსია
-
-იმის ნაცვლად რომ program.cs ში გვქონოდა:
-app.UseMiddleware<CustomMiddleware>();
-
-გვაქვს:
-app.UseMiddleware<CustomMiddleware>();
-
-როგორ მივაღწიეთ ამ შედეგს steps:
-public static class CustomMiddlewareJunior  
-    { 
-        public static IApplicationBuilder UseCustomMiddleware(this IApplicationBuilder app)
-        {
-            return app.UseMiddleware<CustomMiddleware>();
-        }
-    }
-
-    დავაიმპლემენტირე ეს სტატიკური კლასი სტატიკური მეთოდით რათა გამედიდებინა app-ი.
+ამ ვერსიაში გავაკეთე დავალება სადაც მთხოვდნენ რომ body-ში უნდა ყოფილიყო email და password სწორად.
